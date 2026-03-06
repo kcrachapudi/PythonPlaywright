@@ -2,7 +2,7 @@ import pytest
 from playwright.sync_api import sync_playwright
 from utils.config_loader import load_config
 
-@pytest.fixture():
+@pytest.fixture
 def browser():
     config = load_config()
     with sync_playwright() as sp:
